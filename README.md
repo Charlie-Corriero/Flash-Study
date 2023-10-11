@@ -1,1 +1,1 @@
-# Flash-Study
+Alexander Schaefer, Charlie Corriero, Hannah Hagan

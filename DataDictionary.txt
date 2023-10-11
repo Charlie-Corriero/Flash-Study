@@ -1,0 +1,9 @@
+Set name
+set description
+netId
+term definitions
+term name
+set size
+sort order
+course type (listbox, GEOG, CS, MATH, etc.)
+course level (1XXX, 2XXX, 3XXX, 4XXX, 5XXX)

@@ -1,0 +1,12 @@
+
+~~~~~ Insert for tlbSets ~~~~~
+
+INSERT INTO `tblSets` (`pmkSetId`, `fpkNetId`, `fldSetName`, `fldSetDescription`, `fldSortOrder`) VALUES ('1', 'ccorrier', 'testing', 'this is a set for testing purposes', '1');
+
+~~~~~ Insert for tblTerms ~~~~~
+
+INSERT INTO `tblTerms` (`pmkTermId`, `fpkSetId`, `fldTermName`, `fldTermDefinition`, `fldSortOrder`) VALUES ('1', '1', 'Testing 1', 'Testing 1 definition', '1'), ('2', '1', 'Testing 2', 'Testing 2 definition', '2'), ('3', '1', 'Testing 3', 'Testing 3 definition', '3'), ('4', '1', 'Testing 4', 'Testing 4 definition', '4'), ('5', '1', 'Testing 5', 'Testing 5 definition', '5');
+
+~~~~~ Insert for tblUsers ~~~~~
+
+INSERT INTO `tblUsers` (`pmkNetId`) VALUES ('ccorrier');
