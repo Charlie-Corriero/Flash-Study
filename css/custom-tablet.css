@@ -1,0 +1,49 @@
+
+main{
+   grid-template-columns: auto ;
+   max-width: 98vw;
+
+}
+h1{
+    font-size: 1.7em;
+}
+body{
+    max-width: 90vw;
+}
+section{
+    padding: 0%;
+}
+table{
+    max-width: 95%;
+    border-spacing: 1px;
+}
+p, table p{
+    font-size: 9pt;
+}
+main#mainArray{
+    grid-template-columns: auto;
+}
+    section#mainArrayGrid1{
+        grid-template-columns: auto;
+    }
+        ol#detail2InnerGrid2{
+            grid-template-areas: 
+            "detail2Paragraph1" 
+            "detail2Paragraph2"
+            "detail2Paragraph3"
+            "detail2Paragraph4"
+            ;
+        }
+#indexInnerGrid{
+    grid-template-columns: auto;
+        }
+
+nav{
+    text-align: left;
+    grid-template-columns: auto;
+    gap: 0;
+    justify-content: left;
+}
+footer{
+    grid-template-columns: auto;
+}

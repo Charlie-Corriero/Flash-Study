@@ -1,0 +1,348 @@
+
+/*Basics that affect every page*/
+    :root{
+        --body-background-color: rgba(36, 33, 66, 0.9);
+        --main-background-color: rgba(47, 107, 127, 0.5);  
+
+        --nav-background-color: rgb(17, 25, 51);
+        --main-color: rgb(114, 195, 220);
+        --hover-color: aqua;
+        --table-background-color: lightblue;
+        --table-background-color2: rgb(140, 207, 229);
+    }
+    html{
+        background-color: rgb(17, 0, 43);
+        background-image: url("../images/crowd.jpeg");
+    }
+    p, h1, h2, h3, h4, li, lh {
+        color: var(--main-color);
+    }
+    main{ 
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto auto;
+    grid-template-areas:
+    "h2 h2"
+    "section section"
+    "section section"
+    "section section";
+    align-content: start;
+    }
+    section{
+        padding:2vw;
+    }
+
+    body{
+        padding: 1%;
+    font-family:Verdana, Tahoma, sans-serif;
+    margin: auto;
+    border: thin solid var(--main-color);
+    max-width: 70vw;
+    background-color: var(--body-background-color);
+
+    }
+
+    h1 {
+        background-color: var(--main-background-color);  
+        text-transform:uppercase;
+    }
+    h2 {
+        grid-area: h2;
+    }
+    figure img{
+        width:100%;
+        border: 0.1em solid rgb(11, 2, 53)
+    }
+
+
+    /* rules for nav */
+    .activePage{
+        color:var(--main-color);
+    }
+        nav a{
+            color:rgb(84, 170, 246);
+        }
+        nav a:link{
+            color: rgb(160, 160, 215);
+            text-decoration: none;
+        }
+        nav a:hover{
+            text-decoration: underline;
+        }
+        nav{
+            border: thin solid black;
+            background-color: var(--nav-background-color);
+            text-align: center; 
+            position: relative;
+            display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: auto auto auto auto auto auto;
+        gap: 4.5vw;
+        justify-content: center;
+        }
+
+        .activePage{
+            color:var(--main-color);
+        }
+    /* rules for nav end */
+    /* rules for footer */
+    footer> p{
+        text-align: center;
+        font-size: x-small;
+    }
+
+    nav > a{
+        color:yellow;
+    }
+
+
+
+/* rules for tables & lists */
+    table{
+        border-collapse: collapse;
+        margin:auto;
+    }
+    tr:nth-child(even) {
+        background-color:var(--table-background-color2);
+    }
+    tr:nth-child(odd) {
+        background-color:var(--table-background-color);
+    } 
+    tr:hover{
+        background-color: var(--hover-color)
+    }
+    table, th{
+        border: thin solid rgb(27, 146, 140);
+    }
+    tr, td{
+        border: thin solid rgb(107, 188, 190);
+        margin: 2%;
+    }
+
+    cite{
+    font-size: xx-small;
+    }
+
+/* rules for tables & lists end */
+
+
+/* End every page rules */
+
+/* Index Page CSS */
+    main#mainIndex{
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+    }
+
+    #indexInnerGrid{
+        display: grid;
+        grid-template-areas:
+        "indexParagraph1 indexParagraph2"
+        "indexParagraph3 indexParagraph4"
+        ;
+    }
+
+    #indexMainParagraph1{
+    grid-area: indexParagraph1;
+    }
+
+    #indexMainParagraph2{
+        grid-area: indexParagraph2;
+    }
+
+    #indexMainParagraph3{
+        grid-area: indexParagraph3;
+    }
+
+    #indexMainParagraph4{
+        grid-area: indexParagraph4;
+    }
+/* End Index Page CSS */
+
+/* Detail Page CSS */
+    main#mainDetail1{
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    }
+    article#video{
+        text-align: center;
+    }
+
+/* End Detail Page CSS */
+
+/* Detail2 Page CSS */
+main#mainDetail2{
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+}
+    section#detail2InnerGrid1{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+    }
+        ol#detail2InnerGrid2{
+            display: grid;
+            grid-template-areas:
+            "detail2Paragraph1 detail2Paragraph2"
+            "detail2Paragraph3 detail2Paragraph4"
+            ;
+        }
+            li#detail{
+                padding-right: 3vw;
+            }
+            li#detailLst1{
+                grid-area: detail2Paragraph1;
+            }
+            li#detailLst2{
+                grid-area: detail2Paragraph2;
+            }
+            li#detailLst3{
+                grid-area: detail2Paragraph3;
+            }
+            li#detailLst4{
+                grid-area: detail2Paragraph4;
+            }
+            li.detail2Head{
+                color: lightseagreen;
+            }
+            li.detail2Head > p{
+                color: rgb(5, 5, 129);
+                margin-right: 1em;
+            }
+            li.detail2Head > h4{
+                color: rgb(0, 105, 128);
+                margin-right: 2em;
+            }
+
+/* End Detail2 Page CSS */
+
+/* Array Page CSS */
+
+main#mainArray{
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+}
+    section#mainArrayGrid1{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto auto;
+    }
+        table#arrayTable{
+            border: thick solid rgb(39, 39, 81);
+            border-collapse: collapse;
+        }
+        table#arrayTable td, table#arrayTable tr{
+            border: thin solid rgb(37, 26, 104);
+            border-collapse: collapse;
+        }
+        table#arrayTable{
+            background-color: rgb(109, 109, 137);
+        }
+        img.arrayImageType1{
+            border-radius: 50%;
+        }
+
+/* End Array Page CSS */
+
+/* Rules for the form */
+    label{
+        display: inline-block;
+        text-align: left;
+        margin-left: 2%;
+    }
+    input[type=radio], input[type=submit], input[type=checkbox], select{
+        cursor: pointer;
+    }
+        input[type=radio]{
+        appearance: none;
+        margin: 0;
+        }
+    input[type=radio]{
+        display: inline-block;
+    width: 10pt;
+    height: 10pt;
+    content: "\00a0";
+    background-color:lightblue;
+    border-radius: 100%;
+    border: thin black solid;
+    }
+    input[type=radio]:checked{
+        background-color:blueviolet;
+    }
+    input[type=checkbox]{
+        appearance: none;
+        margin: 0;
+        }
+    input[type=checkbox]{
+        display: inline-block;
+    width: 10pt;
+    height: 10pt;
+    content: "\00a0";
+    color:white;
+    background-color:lightblue;
+    border: thin solid black;
+    }
+    input[type=checkbox]:checked{
+        background-color:blueviolet;
+        content: "\2713";
+        color: black;
+    }
+
+    input[type=text], input[type=email], select, textarea {
+        box-sizing: border-box;
+        width: auto;
+        padding: 0.1em;
+        border: 1pt solid blue;
+        border-radius: 3%;
+    }
+    input[type=text]:focus, input[type=email]:focus{
+        background-color:lightgreen;
+    }
+    input[type=submit]{
+        width: auto;
+    }
+    /*CSS for the look of the form page*/
+        #formSectionBackground{
+            background-color: rgb(189, 243, 225);
+        }
+
+        main#mainForm{
+            grid-template-columns: auto;
+            grid-template-rows: auto auto;
+        }
+/* rules for the form end */
+fieldset{
+    border:rgb(0, 105, 128);
+}
+input[type=submit], button[type=submit]{
+    background-color: aqua;
+    color:rgb(17, 42, 50);
+    text-decoration:wavy;
+    width: 10%;
+    border: thick rgb(43, 103, 177) solid;
+    border-radius: 50%;
+}
+
+.create label{
+    display:inline-block;
+}
+
+.text p {
+    display:inline-block;
+    grid-area: p;
+}
+.txthead{
+    grid-area: txthead;
+    width: 98%;
+}
+.term{
+    grid-area: term;
+    width: 28%;
+}
+.definition{
+    grid-area: definition;
+    width: 70%;
+}
+.phead{
+    width: 50%;
+}
