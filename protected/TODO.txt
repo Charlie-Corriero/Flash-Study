@@ -1,0 +1,13 @@
+TODO:
+- Get rid of the $netid functionality, don't think its worth showing/requiring for the resume
+- Remove .htaccess file and make sure others can view the Admin side of the site
+- Clean up code
+    - add comments
+    - more whitespace
+- Remove other SQL statements that would delete/update/create a set
+- Maybe clean upp CSS and change the way it looks?
+- Fix CSS on the about us page
+    - some text is black and unreadable
+    - random '=' on bottom of page
+    - Move the study set description under the study set name
+- Fix the update page so it works as intended, shows what it would've updated to
